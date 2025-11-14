@@ -1,8 +1,11 @@
-/* Index :
+/* Index
 Page index : 
+media queries : 
+Page fantasy : 
+
 */
 
-/*page index.html */
+/*page index.html : general */
 
 :root{
    --bleu-nuit: #000226;
@@ -13,7 +16,9 @@ Page index :
 
 @font-face {
     font-family: "Cormorant";
-    src: url("assets/fonts/CormorantGaramond-VariableFont_wght") format(woff2);
+    src: url("../fonts/CormorantGaramond-VariableFont_wght.woff2") format(woff2);
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -21,21 +26,52 @@ body {
     font-family: "Cormorant", 'Times New Roman', Times, serif;
 }
 
+/*Mobile*/
+@media screen and (max-width:576px){
+
+.navDesktop{
+    display: none;
+}
+
+}
+
+/* tablette*/
+@media screen and (min-width:577px) and (max-width:899px) {
+    
+}
+
 /* Header */
 
-.barreNav{
+.navMobile{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: var(--bleu-nuit);
 }
 
-.barreNav li{
+.navDesktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--bleu-nuit);
+}
+
+.btn-dark{
+    background-color: var(--bleu-nuit);
+    border: none;
+}
+
+.navDesktop li{
     list-style: none;
 }
 
-.barreNav a{
+.navDesktop a{
     text-decoration: none;
     color: white;
-    justify-content: space-around;
+    vertical-align: middle;
+    padding-top: 7px;
+}
+
+.navLogo{
+    font-size: 140%;
 }
