@@ -1,0 +1,41 @@
+/* Index :
+Page index : 
+*/
+
+/*page index.html */
+
+:root{
+   --bleu-nuit: #000226;
+   --dore : #ffd700;
+   --pastel-dore: #ead998;
+   --pastel-bleu: #2f3a44; 
+}
+
+@font-face {
+    font-family: "Cormorant";
+    src: url("assets/fonts/CormorantGaramond-VariableFont_wght") format(woff2);
+}
+
+body {
+    margin: 0px;
+    font-family: "Cormorant", 'Times New Roman', Times, serif;
+}
+
+/* Header */
+
+.barreNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--bleu-nuit);
+}
+
+.barreNav li{
+    list-style: none;
+}
+
+.barreNav a{
+    text-decoration: none;
+    color: white;
+    justify-content: space-around;
+}

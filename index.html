@@ -3,31 +3,37 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/Assets/CSS/stylesheet.css" rel="stylesheet">
-        <title>Ex-Libris</title>
+        <meta name="description" content="Librairie Ex Libris à Colmar, vente de livres, événements, suggestions, dédicaces et ateliers">
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/CSS/stylesheet.css" rel="stylesheet">
+        <title>Librairie Colmar - Ex Libris</title>
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="#index.html">Accueil</a></li>
+            <nav class="navDesktop">
+                <ul class="barreNav">
+                    <li><a href="index.html">Accueil</a></li>
                     <li class="nav-item dropdown">
                         <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Univers</button>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#fantasy.html">Fantasy</a></li>
-                            <li><a class="dropdown-item" href="#policier.html">Policier</a></li>
-                            <li><a class="dropdown-item" href="#romance.html">Romance</a></li>
-                            <li><a class="dropdown-item" href="#jeunesse.html">Jeunesse</a></li>
+                            <li><a class="dropdown-item" href="pages/fantasy.html">Fantasy</a></li>
+                            <li><a class="dropdown-item" href="pages/policier.html">Policier</a></li>
+                            <li><a class="dropdown-item" href="pages/romance.html">Romance</a></li>
+                            <li><a class="dropdown-item" href="pages/jeunesse.html">Jeunesse</a></li>
                         </ul>
-                    <li><a class="navLogo" href="#index.html">Ex Libris</a></li>
-                    <li><a href="#contact.html">Contact</a></li>
-                    <li><a href="#contact.html">Galerie</a></li>
+                    </li>
+                    <li><a class="navLogo" href="index.html">Ex Libris</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/galerie.html">Galerie</a></li>
                 </ul>
+            </nav>
+            <nav class="navMobile">
+
             </nav>
         </header>
         <section class="hero">
             <div>
-                <img>
+                <img class="imgHero" src="assets/images/Banner Index.jpg" alt="Bibliothèque">
             </div>
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
@@ -37,13 +43,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="" class="d-block w-100" alt="banniere pour un evenement atelier creatif">
+                        <img src="assets/images/banner-Evenement1.jpg" class="d-block w-100" alt="banniere pour un evenement atelier creatif">
                     </div>
                     <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="banniere pour un evenement dedicace auteure">
+                        <img src="assets/images/banner-evenement2.jpg" class="d-block w-100" alt="banniere pour un evenement dedicace auteure">
                     </div>
                     <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="banniere pour un evenement conference">
+                        <img src="assets/images/banner-evenement3.jpg" class="d-block w-100" alt="banniere pour un evenement conference">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -55,83 +61,113 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <div>
+                <h1>Ex libris, votre librairie à Colmar</h1>
+            </div>
         </section>
         <section class="sorties">
-            <h1>Sorties du mois</h1>
+            <h2>Sorties du mois</h2>
             <div class="bookSorties">
-                <img class="bookCover">
-                <p class="titre"></p>
-                <p class="auteur"></p>
-                <p class="resume"></p>
+                <img class="bookCover" src="assets/images/cover-82-secondes.jpg" alt="couverture livre 8.2 secondes" >
+                <p class="titre">8.2 secondes</p>
+                <p class="auteur">Maxime Chattam</p>
+                <p class="resume">8,2 secondes.<br>C'est le temps qu'il faut pour tomber amoureux. <br>C'est aussi le temps qu'il faut pour mourir.</p>
             </div>
-                    <div class="bookSorties">
-                <img class="bookCover">
-                <p class="titre"></p>
-                <p class="auteur"></p>
-                <p class="resume"></p>
+            <div class="bookSorties">
+                <img class="bookCover" src="assets/images/cover-cold-case-academy.jpg" alt="couverture livre Cold Case Academy">
+                <p class="titre">Cold Case Academy</p>
+                <p class="auteur">Jennifer Lynn Barnes</p>
+                <p class="resume">Profilers d'élite. <br>Un don hors du commun. <br>Des enquêtes hors de contrôle</p>
             </div>
         </section>
         <section class="auteurMois">
-            <h1>Auteur du mois</h1>
+            <h2>Auteur du mois</h2>
             <div>
-                <img class="portrait">
+                <img class="portrait" src="assets/images/portrait sarah j maas.webp" alt="portrait de Sarah J Maas">
                 <div>
                     <p>Sarah J Maas</p>
-                    <p></p>
+                    <p>Sarah J. Maas est une autrice américaine de fantasy à succès, connue pour ses sagas Keleana, l’assassineuse et Un palais d’épines et de roses, mêlant magie, romance et héroïnes fortes.</p>
                 </div>
             </div>
         </section>
         <section class="prix">
-            <div>
-                <p class="buttonPrix"></p>
+            <div class="bookPrix">
                 <div>
-                    <img class="bookCover">
-                    <p class="titre"></p>
-                    <p class="auteur"></p>
+                    <p class="buttonPrix">Prix Nobel</p>
+                </div>
+                <div>
+                    <img class="bookCover" src="assets/images/cover-melancolie-de-la-resistance.jpg" alt="cover livre prix Nobel de l'année">
+                    <p class="titre">La mélancolie de la résistance</p>
+                    <p class="auteur">László Krasznahorkai</p>
                     <a class="savoirPlus">En savoir plus</a>
                 </div>
             </div>
-            <div>
-                <p class="buttonPrix"></p>
+            <div class="bookPrix">
                 <div>
-                    <img class="bookCover">
-                    <p class="titre"></p>
-                    <p class="auteur"></p>
+                    <p class="buttonPrix">Prix Femina</p>
+                </div>
+                <div>
+                    <img class="bookCover" src="assets/images/cover-la-nuit-au-coeur.webp" alt="cover livre prix Femina de l'année">
+                    <p class="titre">La nuit au coeur</p>
+                    <p class="auteur">Natacha Appanah</p>
                     <a class="savoirPlus">En savoir plus</a>
                 </div>
             </div>
-            <div>
-                <p class="buttonPrix"></p>
+            <div class="bookPrix">
                 <div>
-                    <img class="bookCover">
-                    <p class="titre"></p>
-                    <p class="auteur"></p>
+                    <p class="buttonPrix">Prix Goncourt</p>
+                </div>
+                <div>
+                    <img class="bookCover" src="assets/images/cover-la-maison-vide.jpg" alt="cover livre prix Goncourt de l'année">
+                    <p class="titre">La Maison Vide</p>
+                    <p class="auteur">Laurent Mauvignier</p>
                     <a class="savoirPlus">En savoir plus</a>
                 </div>
             </div>
-            <div>
-                <p class="buttonPrix"></p>
+            <div class="bookPrix">
                 <div>
-                    <img class="bookCover">
-                    <p class="titre"></p>
-                    <p class="auteur"></p>
+                    <p class="buttonPrix">Prix Renaudot</p>
+                </div>
+                <div>
+                    <img class="bookCover" src="assets/images/cover-Je-voulais-vivre.jpg" alt="cover livre prix Renaudot de l'année">
+                    <p class="titre">Je Voulais Vivre</p>
+                    <p class="auteur">Adélaïde de Clermont-Tonnerre</p>
                     <a class="savoirPlus">En savoir plus</a>
                 </div>
             </div>
         </section>
         <footer>
            <div class="reseaux">
-
+                <div class="logoFooter">
+                    <img src="assets/images/logoBlancNomSVG.svg" alt="logo Ex Libris">
+                </div>
+                <div>
+                    <img src="assets/images/Icon/icons8-facebook-BLANC.png" alt="icone logo facebook">
+                    <img src="assets/images/Icon/icons8-instagram-BLANC.png" alt="icone logo Instagram">
+                    <img src="assets/images/Icon/icons8-tiktok-BLANC.png" alt="icone logo Tiktok">
+                </div>
            </div> 
            <div class="contactFooter">
-
+                <p>Librairie Ex Libris <br>4 rue du Rhin<br>68000 Colmar</p>
+                <p>Tel 03.68.67.20.22.<br>Mail:exlibris@gmail.com</p>
+                <p>Horaires :<br>Lundi au samedi :<br>10h - 18h</p>
            </div>
            <div class="planFooterGauche">
-
+                <a href="index.html">Accueil</a>
+                <p>Univers</p>
+                <a href="fantasy.html">Fantasy</a>
+                <a href="policier.html">Policier</a>
+                <a href="romance.html">Romance</a>
+                <a href="jeunesse.html">Jeunesse</a>
            </div>
            <div class="planFooterDroite">
-
+                <a href="contact.html">Contacts</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="mention.html">Mentions légales</a>
+                <a href="confidentialite.html">Politique de confientialité</a>
+                <a href="planDuSite.html">Plan du site</a>
            </div>
         </footer>
     </body>
+<script src="assets/js/bootstrap.js"></script>
 </html>
