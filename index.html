@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Librairie Colmar - Ex Libris</title>
         <meta name="description" content="Librairie Ex Libris à Colmar, vente de livres, événements, suggestions, dédicaces et ateliers">
+        <link rel="icon" href="assets/images/Icon/faviconLogo.ico" type="image/x-icon">
         <link href="assets/css/bootstrap.css" rel="stylesheet">
         <link href="assets/CSS/stylesheet.css" rel="stylesheet">
-        <title>Librairie Colmar - Ex Libris</title>
     </head>
     <body>
         <header>
@@ -30,18 +31,34 @@
             </nav>
             <!--Barre de navigation mobile-->
             <nav class="navMobile">
-                <!--menu burger-->
-                <img src="assets/images/Icon/icons8-menu-BLANC.png" alt="icone menu" data-bs-toggle="collapse" data-bs-target="#collapse" height="50px" width="50px">
-                <div style="min-height: 120px;">
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                        <div class="card card-body" style="width: 300px;">
-                        On met des liens
+                <div>
+                    <img src="assets/images/Icon/icons8-menu-BLANC.png" class="navbar-toggler"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Accueil</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Univers</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="pages/fantasy.html">Fantasy</a></li>
+                                        <li><a class="dropdown-item" href="pages/policier.html">Policier</a></li>
+                                        <li><a class="dropdown-item" href="pages/romance.html">Romance</a></li>
+                                        <li><a class="dropdown-item" href="pages/jeunesse.html">Jeunesse</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Galerie</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <a href="pages/galerie.html"><img src="assets/images/Icon/icons8-photos-BLANC.png" alt="icone galerie image" height="50px" width="50px"></a>
-                <a href="pages/contact.html"><img src="assets/images/Icon/icons8-adresse-BLANC.png" alt="icone localisation contact" height="50px" width="50px"></a>
-                <a href="index.html"><img src="assets/images/logoBlancSeulSVG.svg" alt="logo" height="50px" width="50px"></a>
+                    <a href="pages/galerie.html"><img src="assets/images/Icon/icons8-photos-BLANC.png" alt="icone galerie image" height="50px" width="50px"></a>
+                    <a href="pages/contact.html"><img src="assets/images/Icon/icons8-adresse-BLANC.png" alt="icone localisation contact" height="50px" width="50px"></a>
+                    <a href="index.html"><img src="assets/images/logoBlancSeulSVG.svg" alt="logo" height="50px" width="50px"></a>
             </nav>
         </header>
         <section class="hero">

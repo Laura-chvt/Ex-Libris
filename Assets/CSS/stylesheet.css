@@ -40,6 +40,16 @@ body {
     
 }
 
+/* desktop*/
+@media screen and (min-width:577px) {
+    
+    .navMobile{
+        display: none;
+    }
+
+}
+
+
 /* Header */
 
 .navMobile{
@@ -74,4 +84,25 @@ body {
 
 .navLogo{
     font-size: 140%;
+}
+
+/*Page galerie - display pour masonry*/
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 30%; /* largeur d'une colonne (tu peux ajuster) */
+}
+
+.grid-item {
+  margin-bottom: 20px;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
 }
