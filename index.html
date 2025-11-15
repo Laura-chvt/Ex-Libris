@@ -35,14 +35,14 @@
                     <img src="assets/images/Icon/icons8-menu-BLANC.png" class="navbar-toggler"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <p class="offcanvas-title" id="offcanvasNavbarLabel">Menu</p>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Accueil</a></li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Univers</a>
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Univers</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="pages/fantasy.html">Fantasy</a></li>
                                         <li><a class="dropdown-item" href="pages/policier.html">Policier</a></li>
@@ -50,8 +50,8 @@
                                         <li><a class="dropdown-item" href="pages/jeunesse.html">Jeunesse</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Galerie</a></li>
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="pages/contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="pages/galerie.html">Galerie</a></li>
                             </ul>
                         </div>
                     </div>
@@ -62,11 +62,9 @@
             </nav>
         </header>
         <section class="hero">
-            <div class="imgContainer">
-                <img class="imgHero" src="assets/images/Banner Index.jpg" alt="Bibliothèque">
-            </div>
+            <div class="imgContainer"></div>
             <!--Carousel évenement avec bootstrap-->
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -83,44 +81,49 @@
                         <img src="assets/images/banner-evenement3.jpg" class="d-block w-100" alt="banniere pour un evenement conference">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
             <div>
-                <h1>Ex libris, votre librairie à Colmar</h1>
+                <h1 class="h1index">Ex libris, votre librairie à Colmar</h1>
             </div>
         </section>
+        <!--Section sorties-->
         <section class="sorties">
             <h2>Sorties du mois</h2>
-            <div class="bookSorties">
-                <img class="bookCover" src="assets/images/cover-82-secondes.jpg" alt="couverture livre 8.2 secondes" >
-                <p class="titre">8.2 secondes</p>
-                <p class="auteur">Maxime Chattam</p>
-                <p class="resume">8,2 secondes.<br>C'est le temps qu'il faut pour tomber amoureux. <br>C'est aussi le temps qu'il faut pour mourir.</p>
-            </div>
-            <div class="bookSorties">
-                <img class="bookCover" src="assets/images/cover-cold-case-academy.jpg" alt="couverture livre Cold Case Academy">
-                <p class="titre">Cold Case Academy</p>
-                <p class="auteur">Jennifer Lynn Barnes</p>
-                <p class="resume">Profilers d'élite. <br>Un don hors du commun. <br>Des enquêtes hors de contrôle</p>
+            <div class="containerSorties">
+                <div class="bookSorties">
+                    <img class="bookCover" src="assets/images/cover-82-secondes.jpg" alt="couverture livre 8.2 secondes" >
+                    <p class="titre">8.2 secondes</p>
+                    <p class="auteur">Maxime Chattam</p>
+                    <p class="resumeSorties">8,2 secondes.<br>C'est le temps qu'il faut pour tomber amoureux. <br>C'est aussi le temps qu'il faut pour mourir.</p>
+                </div>
+                <div class="bookSorties">
+                    <img class="bookCover" src="assets/images/cover-cold-case-academy.jpg" alt="couverture livre Cold Case Academy">
+                    <p class="titre">Cold Case Academy</p>
+                    <p class="auteur">Jennifer Lynn Barnes</p>
+                    <p class="resumeSorties">Profilers d'élite. <br>Un don hors du commun. <br>Des enquêtes hors de contrôle</p>
+                </div>
             </div>
         </section>
+        <!--Section auteur du mois-->
         <section class="auteurMois">
             <h2>Auteur du mois</h2>
-            <div>
+            <div class="containerAuteur">
                 <img class="portrait" src="assets/images/portrait sarah j maas.webp" alt="portrait de Sarah J Maas">
-                <div>
-                    <p>Sarah J Maas</p>
+                <div class="texteAuteur">
+                    <span>Sarah J Maas</span>
                     <p>Sarah J. Maas est une autrice américaine de fantasy à succès, connue pour ses sagas Keleana, l’assassineuse et Un palais d’épines et de roses, mêlant magie, romance et héroïnes fortes.</p>
                 </div>
             </div>
         </section>
+        <!--Section concours et prix-->
         <section class="prix">
             <div class="bookPrix">
                 <div>
@@ -167,20 +170,21 @@
                 </div>
             </div>
         </section>
+        <!--Section footer-->
         <footer>
            <div class="reseaux">
                 <div class="logoFooter">
-                    <img src="assets/images/logoBlancNomSVG.svg" alt="logo Ex Libris">
+                    <img src="assets/images/logoBlancNomSVG.svg" alt="logo Ex Libris" height="279px" width="244px">
                 </div>
-                <div>
-                    <img src="assets/images/Icon/icons8-facebook-BLANC.png" alt="icone logo facebook">
-                    <img src="assets/images/Icon/icons8-instagram-BLANC.png" alt="icone logo Instagram">
-                    <img src="assets/images/Icon/icons8-tiktok-BLANC.png" alt="icone logo Tiktok">
+                <div class="reseauxFooter">
+                    <img src="assets/images/Icon/icons8-facebook-BLANC.png" alt="icone logo facebook" height="65px" width="65px">
+                    <img src="assets/images/Icon/icons8-instagram-BLANC.png" alt="icone logo Instagram" height="65px" width="65px">
+                    <img src="assets/images/Icon/icons8-tiktok-BLANC.png" alt="icone logo Tiktok" height="65px" width="65px">
                 </div>
            </div> 
            <div class="contactFooter">
                 <p>Librairie Ex Libris <br>4 rue du Rhin<br>68000 Colmar</p>
-                <p>Tel 03.68.67.20.22.<br>Mail:exlibris@gmail.com</p>
+                <p>Tel : 03.68.67.20.22.<br>Mail : exlibris@gmail.com</p>
                 <p>Horaires :<br>Lundi au samedi :<br>10h - 18h</p>
            </div>
            <div class="planFooterGauche">

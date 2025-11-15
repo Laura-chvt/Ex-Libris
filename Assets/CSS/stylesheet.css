@@ -5,7 +5,7 @@ Page fantasy :
 
 */
 
-/*page index.html : general */
+/* general */
 
 :root{
    --bleu-nuit: #000226;
@@ -21,16 +21,11 @@ Page fantasy :
     font-style: normal;
 }
 
-body {
-    margin: 0px;
-    font-family: "Cormorant", 'Times New Roman', Times, serif;
-}
-
 /*Mobile*/
 @media screen and (max-width:576px){
 
 .navDesktop{
-    display: none;
+    display: none !important;
 }
 
 }
@@ -43,14 +38,14 @@ body {
 /* desktop*/
 @media screen and (min-width:577px) {
     
-    .navMobile{
-        display: none;
-    }
+    /* .navMobile{
+        display: none !important;
+    } */
 
 }
 
-
-/* Header */
+/* INDEX */
+/* header */
 
 .navMobile{
     display: flex;
@@ -82,11 +77,163 @@ body {
     padding-top: 7px;
 }
 
+
 .navLogo{
     font-size: 140%;
 }
 
-/*Page galerie - display pour masonry*/
+/* body */
+
+body {
+    margin: 0px;
+    font-family: "Cormorant", 'Times New Roman', Times, serif;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 520px;
+    background-image: url(../images/Banner\ Index.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.h1index{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.containerSorties{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bookSorties{
+    background-color: var(--pastel-dore);
+    padding: 40px;
+}
+
+.bookCover{
+    height: 233px;
+    width: 185px;
+    display: block;
+    margin: 0 auto;
+}
+
+.titre{
+    text-align: center;
+    font-size: 40px;
+}
+
+.auteur{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.resumeSorties{
+    text-align: justify;
+
+}
+
+.auteurMois{
+    background-color: var(--pastel-bleu);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+
+.auteurMois h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.containerAuteur{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.portrait{
+    width: 184px;
+    height: 230px;
+    margin: 40px 60px 40px 60px;
+}
+
+.texteAuteur {
+    margin: 40px 60px 40px 0px;
+}
+
+.texteAuteur span{
+    font-size: 36px;
+}
+
+.texteAuteur p{
+    text-align: justify;
+    font-size: 24px;
+}
+
+.prix{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 100px;
+    margin: 100px 400px 100px 400px;
+}
+
+.bookPrix{
+    background-color: var(--pastel-dore);
+    padding: 60px;
+}
+
+.savoirPlus{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.buttonPrix{
+    background-color: white;
+    border: solid 1px black;
+
+}
+
+/* footer */
+
+footer{
+    background-color: var(--bleu-nuit);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 140%; 
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.reseauxFooter{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.contactFooter, .planFooterGauche, .planFooterDroite{
+    padding-top: 30px;
+}
+
+/*GALERIE - display pour masonry*/
 
 .grid {
   margin: 0 auto;
@@ -94,7 +241,7 @@ body {
 
 .grid-sizer,
 .grid-item {
-  width: 30%; /* largeur d'une colonne (tu peux ajuster) */
+  width: 30%; /* largeur d'une colonne */
 }
 
 .grid-item {
