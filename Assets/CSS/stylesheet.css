@@ -21,10 +21,11 @@ Page fantasy :
     font-style: normal;
 }
 
+
 /*Mobile*/
 @media screen and (max-width:576px){
 
-.navDesktop{
+.navDesktop, .navUnivers{
     display: none !important;
 }
 
@@ -38,9 +39,9 @@ Page fantasy :
 /* desktop*/
 @media screen and (min-width:577px) {
     
-    /* .navMobile{
+    .navMobile{
         display: none !important;
-    } */
+    }
 
 }
 
@@ -54,11 +55,20 @@ Page fantasy :
     background-color: var(--bleu-nuit);
 }
 
+.offcanvas {
+  width: 60%;
+  max-width: 360px;
+  height: 50vh;
+}
+
 .navDesktop{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: var(--bleu-nuit);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .btn-dark{
@@ -74,12 +84,17 @@ Page fantasy :
     text-decoration: none;
     color: white;
     vertical-align: middle;
-    padding-top: 7px;
+    padding-top: 40px;
+    font-size: 220%;
+}
+
+.navDesktop button{
+    font-size: 220%;
 }
 
 
 .navLogo{
-    font-size: 140%;
+    font-size: 300% !important;
 }
 
 /* body */
@@ -100,8 +115,9 @@ body {
 .h1index{
     text-align: center;
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
+    margin: 50px auto 60px auto;
 }
 
 h2{
@@ -109,14 +125,20 @@ h2{
     font-size: 3rem;
 }
 
+.sorties h2{
+    margin-bottom: 60px;
+}
+
 .containerSorties{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 8%;
 }
 
 .bookSorties{
     background-color: var(--pastel-dore);
-    padding: 40px;
+    padding: 40px 100px 40px 100px;
+    width: 28%;
 }
 
 .bookCover{
@@ -128,18 +150,22 @@ h2{
 
 .titre{
     text-align: center;
-    font-size: 40px;
+    font-size: 230%;
+    margin-bottom: -10px;
 }
 
 .auteur{
     text-align: center;
-    font-size: 30px;
+    font-size: 190%;
+    margin-bottom: 35px;
 
 }
 
 .resumeSorties{
     text-align: justify;
-
+    width: 95%;
+    font-size: 130%;
+    line-height: 120%;
 }
 
 .auteurMois{
@@ -148,18 +174,21 @@ h2{
     margin-bottom: 40px;
     padding-bottom: 50px;
     padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .auteurMois h2{
     color: white;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .containerAuteur{
     background-color: white;
     display: flex;
-    justify-content: center;
-    width: 60%;
+    width: 55%;
 }
 
 .portrait{
@@ -184,27 +213,33 @@ h2{
 .prix{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 100px;
-    margin: 100px 400px 100px 400px;
+    justify-content: center;
+    gap: 10%;
 }
 
 .bookPrix{
     background-color: var(--pastel-dore);
-    padding: 60px;
+    padding: 40px 100px 40px 100px;
+    width: 30%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.savoirPlus{
+.savoirPlus {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    text-align: center;
+    font-size: 130%;
+    vertical-align: bottom;
 }
 
 .buttonPrix{
     background-color: white;
     border: solid 1px black;
-
+    font-size: 200%;
+    text-align: center;
+    width: 200px;
+    height: 60px;
 }
 
 /* footer */
@@ -215,6 +250,7 @@ footer{
     justify-content: space-around;
     color: white;
     font-size: 140%; 
+    margin-top: 20px;
 }
 
 footer a{
@@ -233,23 +269,82 @@ footer a{
     padding-top: 30px;
 }
 
+/* COMMUN PAGES UNIVERS*/
+
+h1 {
+
+}
+
+.navUnivers{
+    background-color: var(--pastel-bleu);
+    width: 5%;
+}
+
+.navUnivers a{
+    color: white;
+}
+
+.listeRomans{
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    flex-wrap:wrap;
+}
+
+.presLivre{
+    background-color: var(--pastel-dore);
+    padding: 40px 30px 40px 30px;
+    width: 30%;
+    margin-bottom: 30px;
+
+}
+
+.coverUnivers{
+    height: 233px;
+    width: 185px;
+    display: block;
+    margin: 0 auto;
+}
+
+.titreUnivers{
+    text-align: center;
+    font-size: 230%;
+    margin-bottom: -10px;
+}
+
+.auteurUnivers{
+    text-align: center;
+    font-size: 190%;
+    margin-bottom: 35px;
+}
+
+/*FANTASY*/
+
+.imgFantasy{
+
+}
+
 /*GALERIE - display pour masonry*/
 
 .grid {
-  margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
 }
 
-.grid-sizer,
-.grid-item {
-  width: 30%; /* largeur d'une colonne */
+.grid-sizer {
+    width: 33.333%;
 }
 
 .grid-item {
-  margin-bottom: 20px;
+    width: 33.333%;
+    margin-bottom: 16px;
+    display: block;
 }
 
 .grid-item img {
-  display: block;
-  width: 100%;
-  border-radius: 6px;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
