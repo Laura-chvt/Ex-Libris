@@ -49,7 +49,7 @@ Page fantasy :
 /* header */
 
 .navMobile{
-    display: flex;
+    display: flex; 
     flex-direction: row;
     justify-content: space-around;
     background-color: var(--bleu-nuit);
@@ -114,7 +114,7 @@ body {
 
 .h1index{
     text-align: center;
-    font-size: 4rem;
+    font-size: clamp(2.25rem, 6vw, 4rem);
     font-weight: 800;
     text-transform: uppercase;
     margin: 50px auto 60px auto;
@@ -122,7 +122,7 @@ body {
 
 h2{
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(1.4rem, 6vw, 3.3rem);
 }
 
 .sorties h2{
@@ -132,12 +132,12 @@ h2{
 .containerSorties{
     display: flex;
     justify-content: center;
-    gap: 8%;
+    gap: 5%;
 }
 
 .bookSorties{
     background-color: var(--pastel-dore);
-    padding: 40px 100px 40px 100px;
+    padding: 40px 80px 40px 80px;
     width: 28%;
 }
 
@@ -150,13 +150,13 @@ h2{
 
 .titre{
     text-align: center;
-    font-size: 230%;
+    font-size: clamp(1rem, 4vw, 2.5rem);
     margin-bottom: -10px;
 }
 
 .auteur{
     text-align: center;
-    font-size: 190%;
+    font-size: clamp(0.81rem, 4vw, 2rem);
     margin-bottom: 35px;
 
 }
@@ -164,7 +164,7 @@ h2{
 .resumeSorties{
     text-align: justify;
     width: 95%;
-    font-size: 130%;
+    font-size: clamp(0.75rem, 3vw, 1.5rem);
     line-height: 120%;
 }
 
@@ -202,41 +202,51 @@ h2{
 }
 
 .texteAuteur span{
-    font-size: 36px;
+    font-size: clamp(0.81rem, 4vw, 2rem);
 }
 
 .texteAuteur p{
     text-align: justify;
-    font-size: 24px;
+    font-size: clamp(0.75rem, 3vw, 1.5rem);
 }
 
 .prix{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10%;
 }
 
 .bookPrix{
+    position: relative;
     background-color: var(--pastel-dore);
-    padding: 40px 100px 40px 100px;
-    width: 30%;
+    padding: 40px 50px 40px 50px;
+    width: 25%;
     margin-top: 40px;
     margin-bottom: 40px;
+    margin: 50px 100px 50px 100px;
+}
+.buttonPrix{
+    position: absolute;
+    top: -32px;
+    left: -28px;
 }
 
-.savoirPlus {
+.savoirPlus a{
+    display: block;
+    text-align: center;
     text-decoration: none;
     color: black;
     font-weight: 600;
-    font-size: 130%;
-    vertical-align: bottom;
+    font-size: clamp(0.75rem, 3vw, 1.5rem);
+    position: absolute;
+    bottom: 20px;
+    left : 175px;
 }
 
 .buttonPrix{
     background-color: white;
     border: solid 1px black;
-    font-size: 200%;
+    font-size: clamp(0.81rem, 4vw, 2rem);
     text-align: center;
     width: 200px;
     height: 60px;
@@ -249,7 +259,7 @@ footer{
     display: flex;
     justify-content: space-around;
     color: white;
-    font-size: 140%; 
+    font-size: clamp(1rem, 4vw, 1.75rem); 
     margin-top: 20px;
 }
 
@@ -271,24 +281,31 @@ footer a{
 
 /* COMMUN PAGES UNIVERS*/
 
-h1 {
-
-}
-
 .navUnivers{
     background-color: var(--pastel-bleu);
-    width: 5%;
+    width: 247px;
+    height: 268px;
+    position: sticky;
 }
 
 .navUnivers a{
+    display: block;
     color: white;
+    font-size: 36px;
 }
 
 .listeRomans{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 6%;
     flex-wrap:wrap;
+}
+
+.rowBook{
+    display: flex;
+    justify-content: center;
+    gap: clamp(18px, 2vw, 60px);
+    margin: 10px 300px 10px 300px;
 }
 
 .presLivre{
@@ -296,7 +313,7 @@ h1 {
     padding: 40px 30px 40px 30px;
     width: 30%;
     margin-bottom: 30px;
-
+    max-height: 450px;
 }
 
 .coverUnivers{
@@ -308,14 +325,34 @@ h1 {
 
 .titreUnivers{
     text-align: center;
-    font-size: 230%;
+    font-size: clamp(1rem, 6vw, 2.5rem);
     margin-bottom: -10px;
 }
 
 .auteurUnivers{
     text-align: center;
-    font-size: 190%;
+    font-size: clamp(1rem, 4vw, 2.5rem);
     margin-bottom: 35px;
+}
+
+@media screen and (max-width:576px){
+    .rowBook{
+        margin: 0px auto;
+    }
+
+    .presLivre{
+        width: 45%;
+    }
+}
+
+/* tablette*/
+@media screen and (min-width:577px) and (max-width:899px) {
+    
+}
+
+/* desktop*/
+@media screen and (min-width:577px) {
+    
 }
 
 /*FANTASY*/
