@@ -67,7 +67,7 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.dropdown-menu a{
+.navMobile .dropdown-menu a{
     padding-top: 15px;
     font-size: 1.3rem;
 }
@@ -77,8 +77,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     background-color: var(--bleu-nuit);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-bottom: 0px;
 }
 .navDesktop .btn-dark{
@@ -91,8 +91,7 @@ body {
 .navDesktop a{
     text-decoration: none;
     color: white;
-    vertical-align: middle;
-    padding-top: 43px;
+    padding-top: 63px;
     font-size: 2.25rem;
 }
 .navDesktop button{
@@ -100,6 +99,13 @@ body {
 }
 .navLogo{
     font-size: 3rem !important;
+}
+.navDesktop .dropdown-menu{
+    background-color: var(--pastel-bleu);
+    padding-bottom: 20px;
+}
+.dropdown-item{
+    padding : 15px 40px 15px 40px;
 }
 
 /* body */
@@ -379,6 +385,22 @@ footer a{
 }
 
 /*POLICIER*/
+
+.policier .heroUnivers{
+    background-image: url(../images/bannerPolicier.jpg);
+}
+
+/*ROMANCE*/
+
+.romance .heroUnivers{
+    background-image: url(../images/bannerRomance.jpg);
+}
+
+/*JEUNESSE*/
+
+.jeunesse .heroUnivers{
+    background-image: url(../images/bannerJeunesse.jpg);
+}
 
 /*GALERIE - display pour masonry*/
 
