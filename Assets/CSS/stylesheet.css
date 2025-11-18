@@ -58,10 +58,19 @@ body {
     justify-content: space-around;
     background-color: var(--bleu-nuit);
 }
-.offcanvas {
-  width: 60%;
-}
 
+.navMobile button{
+    background-color: var(--bleu-nuit);
+    border: none;
+}
+.navMobile img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.dropdown-menu a{
+    padding-top: 15px;
+    font-size: 1.3rem;
+}
 
 .navDesktop{
     display: flex;
@@ -83,14 +92,14 @@ body {
     text-decoration: none;
     color: white;
     vertical-align: middle;
-    padding-top: 40px;
-    font-size: 220%;
+    padding-top: 43px;
+    font-size: 2.25rem;
 }
 .navDesktop button{
-    font-size: 220%;
+    font-size: 2.25rem;
 }
 .navLogo{
-    font-size: 300% !important;
+    font-size: 3rem !important;
 }
 
 /* body */

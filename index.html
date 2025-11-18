@@ -31,45 +31,24 @@
             </nav>
             <!--Barre de navigation mobile-->
             <nav class="navMobile">
-                <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <div class="dropdown">
+                    <button class="btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="assets/images/Icon/icons8-menu-BLANC.png" alt="menu"/>
                     </button>
-                </div>
-                <a href="pages/galerie.html">
-                    <img src="assets/images/Icon/icons8-photos-BLANC.png" alt="icone galerie" height="50" width="50">
-                </a>
-                <a href="pages/contact.html">
-                    <img src="assets/images/Icon/icons8-adresse-BLANC.png" alt="icone contact" height="50" width="50">
-                </a>
-                <a href="index.html">
-                    <img src="assets/images/logoBlancSeulSVG.svg" alt="logo" height="50" width="50">
-                </a>
-            </nav>
-                <!-- OFFCANVAS -->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <p class="offcanvas-title" id="offcanvasNavbarLabel">Menu</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Univers</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="pages/fantasy.html">Fantasy</a></li>
-                                <li><a class="dropdown-item" href="pages/policier.html">Policier</a></li>
-                                <li><a class="dropdown-item" href="pages/romance.html">Romance</a></li>
-                                <li><a class="dropdown-item" href="pages/jeunesse.html">Jeunesse</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link active" href="pages/contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="pages/galerie.html">Galerie</a></li>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Accueil</a></li>
+                        <li><a class="dropdown-item" href="pages/fantasy.html">Fantasy</a></li>
+                        <li><a class="dropdown-item" href="pages/policier.html">Policier</a></li>
+                        <li><a class="dropdown-item" href="pages/romance.html">Romance</a></li>
+                        <li><a class="dropdown-item" href="pages/jeunesse.html">Jeunesse</a></li>
+                        <li><a class="dropdown-item" href="pages/galerie.html">Galerie photos</a></li>
+                        <li><a class="dropdown-item" href="pages/contact.html">Contact</a></li>
                     </ul>
                 </div>
-            </div>
-        </header>
+                <a href="pages/galerie.html"><img class="navIcone" src="assets/images/Icon/icons8-photos-BLANC.png" alt="icone galerie" height="50" width="50"></a>
+                <a href="pages/contact.html"><img class="navIcone" src="assets/images/Icon/icons8-adresse-BLANC.png" alt="icone contact" height="50" width="50"></a>
+                <a href="index.html"><img class="navIcone" src="assets/images/logoBlancSeulSVG.svg" alt="logo" height="50" width="50"></a>
+            </nav>
         <!--HERO-->
         <section class="hero">
             <div class="imgContainer"></div>
