@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Ex Libris</title>
-    <meta name="description" content="Nous contacter ou nous trouver, l'adresse à Colmar de la librairie Ex Libris">
+    <title>Plan du site - Ex Libris</title>
     <link rel="icon" href="../assets/images/Icon/faviconLogo.ico" type="image/x-icon">
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/stylesheet.css" rel="stylesheet">
 </head>
 </head>
-<body>
+<body class="planDuSite">
     <header>
+        <!--Barre de navigation desktop-->
         <nav>
-            <!--Barre de navigation desktop-->
             <ul class="navDesktop">
                 <li><a href="../index.html">Accueil</a></li>
                 <li class="nav-item dropdown">
@@ -51,52 +50,24 @@
             <a href="../index.html"><img class="navIcone" src="../assets/images/logoBlancSeulSVG.svg" alt="logo" height="50" width="50"></a>
         </nav>
     </header>
-    <section class="trouver">
-        <h1>Où nous trouver</h1>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.7471312818957!2d7.364430076817887!3d48.07652365540917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479165fb30b15b99%3A0x9bfe7b716880d65b!2sCCI%20Campus%20Alsace%20-%20Colmar!5e0!3m2!1sfr!2sfr!4v1763025465823!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
-            <p>Librairie Ex Libris<br>4 rue du Rhin<br>68000 Colmar</p>
-            <p>Tel : 03.68.67.20.00.<br>Mail : exlibris@gmail.com </p>
-        </div>
-        <div>
-            <p>Horaires :<br>Lundi au samedi :<br>10h - 18h</p>
-        </div>
-    </section>
-    <section class="contacter">
-        <h2>Nous contacter</h2>
-        <div>
-            <form method="get">
-                <div>
-                    <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" required>
-                </div>
-                <div>
-                    <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom" required>
-                </div>
-                <div>
-                    <label for="mail">Mail</label>
-                    <input type="email" name="mail" id="mail" required>
-                </div>
-                <div>
-                    <label for="sujet">Sujet</label>
-                    <input type="text" name="sujet" id="sujet">
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" maxlength="1000" minlength="100" required></textarea>
-                </div>
-                <div>
-                    <input type="checkbox" id="cookie" name="cookie" required>
-                    <label for="cookie">« J’accepte que mes données personnelles soient collectées et traitées conformément à la politique de confidentialité de ce site.»</label>
-                </div>
-                <div>
-                    <input type="submit" value="Envoyer" id="envoyerButton">
-                </div>
-            </form>
-        </div>
+    <section class="container">
+        <h1 class="text-center h1Commun mt-3">Plan du site</h1>
+        <ul class="m-5">
+            <li><a href="../index.html">Accueil</a></li>
+            <li>Univers :</li>
+            <li><a href="fantasy.html">Fantasy</a></li>
+            <li><a href="fiche1.html">Fiche de détail</a></li>
+            <li><a href="fiche2.html">Fiche de détail</a></li>
+            <li><a href="policier.html">Policier</a></li>
+            <li><a href="romance.html">Romance</a></li>
+            <li><a href="jeunesse.html">Jeunesse</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="galerie.html">Galerie photo</a></li>
+            <br>
+            <li><a href="mentions.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+            <li><a href="planDuSite.html">Plan du site</a></li>
+        </ul>
     </section>
     <footer>
         <div class="reseaux">
@@ -105,7 +76,7 @@
             </div>
             <div class="reseauxFooter">
                 <img src="../assets/images/Icon/icons8-facebook-BLANC.png" alt="icone logo facebook" height="65" width="65">
-                <img src="../assets/images/Icon/icons8-instagram-BLANC.png" alt="icone logo Instagram" height="65" width="65">
+                <img src="../assets/images/Icon/icons8-instagram-BLANC.png" alt="icone logo Instagram" height="65px" width="65">
                 <img src="../assets/images/Icon/icons8-tiktok-BLANC.png" alt="icone logo Tiktok" height="65" width="65">
             </div>
         </div> 
@@ -129,7 +100,7 @@
             <a href="confidentialite.html">Politique de confidentialité</a>
             <a href="planDuSite.html">Plan du site</a>
         </div>
-    </footer>
+    </footer> 
 </body>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </html>
