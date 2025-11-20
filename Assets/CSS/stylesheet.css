@@ -49,7 +49,7 @@ body {
 
 }
 
-/* INDEX */
+/**** INDEX ****/
 /* header */
 
 .navMobile{
@@ -253,9 +253,10 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     color: white;
     font-size: clamp(1rem, 4vw, 1.75rem); 
-    margin-top: 20px;
+    padding-bottom: 25px;
 }
 footer a{
     text-decoration: none;
@@ -271,7 +272,14 @@ footer a{
     padding-top: 30px;
 }
 
-/* COMMUN PAGES UNIVERS*/
+@media screen and (max-width:576px){
+    .reseaux img{
+        max-width: 80%;
+    }
+
+}
+
+/*** COMMUN PAGES UNIVERS ***/
 
 .heroUnivers{
     height: 65vh;
@@ -378,31 +386,31 @@ footer a{
     
 }
 
-/*FANTASY*/
+/*** FANTASY ***/
 
 .fantasy .heroUnivers{
     background-image: url(../images/bannerFantasy.jpg);
 }
 
-/*POLICIER*/
+/*** POLICIER ***/
 
 .policier .heroUnivers{
     background-image: url(../images/bannerPolicier.jpg);
 }
 
-/*ROMANCE*/
+/*** ROMANCE ***/
 
 .romance .heroUnivers{
     background-image: url(../images/bannerRomance.jpg);
 }
 
-/*JEUNESSE*/
+/*** JEUNESSE ***/
 
 .jeunesse .heroUnivers{
     background-image: url(../images/bannerJeunesse.jpg);
 }
 
-/* FICHES DETAILS */
+/*** FICHES DETAILS ***/
 
 .coverFront{
     width: 35%;
@@ -412,7 +420,7 @@ footer a{
 
 }
 
-/*GALERIE - display pour masonry*/
+/*** GALERIE ***/
 
 .grid {
     position: relative;
@@ -437,7 +445,20 @@ footer a{
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-/*MENTIONS LEGALES, POLITIQUE CONFIDENTIALITE, PLAN DU SITE */
+/*** CONTACT ***/
+
+.contacter{
+    background-color: var(--pastel-dore);
+}
+
+.contacter #envoyerButton{
+    background-color: var(--bleu-nuit);
+    color: white;
+    border: none;
+    padding: 5px 7px;
+}
+
+/*** MENTIONS LEGALES, POLITIQUE CONFIDENTIALITE, PLAN DU SITE ***/
 
 .h1Commun{
     font-size: clamp(1.8rem, 3vw, 3.3rem);

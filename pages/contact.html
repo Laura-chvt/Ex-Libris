@@ -10,7 +10,7 @@
     <link href="../assets/css/stylesheet.css" rel="stylesheet">
 </head>
 </head>
-<body>
+<body class="contact">
     <header>
         <nav>
             <!--Barre de navigation desktop-->
@@ -51,48 +51,58 @@
             <a href="../index.html"><img class="navIcone" src="../assets/images/logoBlancSeulSVG.svg" alt="logo" height="50" width="50"></a>
         </nav>
     </header>
-    <section class="trouver">
-        <h1>Où nous trouver</h1>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.7471312818957!2d7.364430076817887!3d48.07652365540917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479165fb30b15b99%3A0x9bfe7b716880d65b!2sCCI%20Campus%20Alsace%20-%20Colmar!5e0!3m2!1sfr!2sfr!4v1763025465823!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
-            <p>Librairie Ex Libris<br>4 rue du Rhin<br>68000 Colmar</p>
-            <p>Tel : 03.68.67.20.00.<br>Mail : exlibris@gmail.com </p>
-        </div>
-        <div>
-            <p>Horaires :<br>Lundi au samedi :<br>10h - 18h</p>
+    <section class="trouver container">
+        <h1 class="text-center col-12">Où nous trouver</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.7471312818957!2d7.364430076817887!3d48.07652365540917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479165fb30b15b99%3A0x9bfe7b716880d65b!2sCCI%20Campus%20Alsace%20-%20Colmar!5e0!3m2!1sfr!2sfr!4v1763025465823!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="row">
+                    <div class="col-6 justify-content-center">
+                        <p>Librairie Ex Libris<br>4 rue du Rhin<br>68000 Colmar</p>
+                        <p>Tel : 03.68.67.20.00.<br>Mail : exlibris@gmail.com </p>
+                    </div>
+                    <div class="col-6 justify-content-center">
+                        <p>Horaires :<br>Lundi au samedi :<br>10h - 18h</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="contacter">
-        <h2>Nous contacter</h2>
-        <div>
+    <section class="contacter pb-4 pt-4">
+        <h2 class="text-center col-12">Nous contacter</h2>
+        <div class="container">
             <form method="get">
-                <div>
-                    <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" required>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="ps-5 pe-5">
+                            <label class="mt-2" for="nom">Nom</label>
+                            <input class="w-100 " type="text" name="nom" id="nom" required>
+                        </div>
+                        <div class="ps-5 pe-5">
+                            <label class="mt-2" for="prenom">Prénom</label>
+                            <input class="w-100" type="text" name="prenom" id="prenom" required>
+                        </div>
+                        <div class="ps-5 pe-5">
+                            <label class="mt-2" for="mail">Mail</label>
+                            <input class="w-100" type="email" name="mail" id="mail" required>
+                        </div>
+                        <div class="ps-5 pe-5">
+                            <label class="mt-2" for="sujet">Sujet</label>
+                            <input class="w-100" type="text" name="sujet" id="sujet">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-5 pe-5">
+                        <label class="mt-2" for="message">Message</label>
+                        <textarea class="w-100 h-75" name="message" id="message" maxlength="1000" minlength="100" required></textarea>
+                    </div>
                 </div>
-                <div>
-                    <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom" required>
+                <div class="col-lg-12 d-flex justify-content-center mt-3">
+                    <input class="form-check-input" type="checkbox" id="cookie" name="cookie" required>
+                    <label class="text-justify" for="cookie">« J’accepte que mes données personnelles soient collectées et traitées conformément à la politique de confidentialité de ce site.»</label>
                 </div>
-                <div>
-                    <label for="mail">Mail</label>
-                    <input type="email" name="mail" id="mail" required>
-                </div>
-                <div>
-                    <label for="sujet">Sujet</label>
-                    <input type="text" name="sujet" id="sujet">
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" maxlength="1000" minlength="100" required></textarea>
-                </div>
-                <div>
-                    <input type="checkbox" id="cookie" name="cookie" required>
-                    <label for="cookie">« J’accepte que mes données personnelles soient collectées et traitées conformément à la politique de confidentialité de ce site.»</label>
-                </div>
-                <div>
+                <div class="col-lg-12 text-center mt-3">
                     <input type="submit" value="Envoyer" id="envoyerButton">
                 </div>
             </form>
@@ -130,6 +140,6 @@
             <a href="planDuSite.html">Plan du site</a>
         </div>
     </footer>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
 </html>
