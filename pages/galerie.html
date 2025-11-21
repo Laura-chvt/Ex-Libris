@@ -7,9 +7,10 @@
     <meta name="description" content="galerie photo de la librairie Ex Libris">
     <link rel="icon" href="../assets/images/Icon/faviconLogo.ico" type="image/x-icon">
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link href="../assets/css/stylesheet.css" rel="stylesheet">
 </head>
-<body>
+<body class="galerie">
     <header>
         <nav>
             <!--Barre de navigation desktop-->
@@ -50,18 +51,18 @@
             <a href="../index.html"><img class="navIcone" src="../assets/images/logoBlancSeulSVG.svg" alt="logo" height="50" width="50"></a>
         </nav>
     </header>
-    <div class="grid">
-        <div class="grid-sizer"></div> <!-- sert à définir la largeur de colonne -->
-        <div class="grid-item"><img src="../assets/images/galerie/comptoir_librairie.jpg" alt="comptoir d'une librairie"></div>
-        <div class="grid-item"><img src="../assets/images/galerie/dedicace_auteure.jpg" alt="auteure qui signe un livre"></div>
-        <div class="grid-item"><img src="../assets/images/galerie/etagere_librairie.jpg" alt="étagères d'une librairie"></div>
-        <div class="grid-item"><img src="../assets/images/galerie/fenetre_livres.jpg" alt="Livres sur un rebord de fenêtre"></div>
-        <div class="grid-item"><img src="../assets/images/galerie/fete_librairie.jpg" alt="décoration festives dans une librairie"></div>
-        <div class="grid-item"><img src="../assets/images/galerie/ilot_librairie.jpg" alt="ilot avec livres"></div>
-        <div class="grid-item"><img src="../assets/images/galerie/interieur_librairie.jpg" alt="intérieur d'une librairie"></div>
-        <div class="grid-item"><img src="../assets/images/galerie/portrait-auteure.jpg" alt="portrait auteure"></div>
-        <div class="grid-item"><img src="../assets/images/galerie/rencontre_auteure.jpg" alt="rencontre auteure"></div>
-        <div class="grid-item"><img src="../assets/images/galerie/signature.jpg" alt="signature documents"></div>
+    <!-- Ma galerie avec glightbox (baslie <a> pour rendre l'image cliquable) -->
+    <div>
+        <a class="glightbox" href="../assets/images/galerie/comptoir_librairie.jpg"><img src="../assets/images/galerie/comptoir_librairie.jpg" alt="comptoir d'une librairie"></a>
+        <a class="glightbox" href="../assets/images/galerie/dedicace_auteure.jpg"><img src="../assets/images/galerie/dedicace_auteure.jpg" alt="auteure qui signe un livre"></a>
+        <a class="glightbox" href="../assets/images/galerie/etagere_librairie.jpg"><img src="../assets/images/galerie/etagere_librairie.jpg" alt="étagères d'une librairie"></a>
+        <a class="glightbox" href="../assets/images/galerie/fenetre_livres.jpg"><img src="../assets/images/galerie/fenetre_livres.jpg" alt="Livres sur un rebord de fenêtre"></a>
+        <a class="glightbox" href="../assets/images/galerie/fete_librairie.jpg"><img src="../assets/images/galerie/fete_librairie.jpg" alt="décoration festives dans une librairie"></a>
+        <a class="glightbox" href="../assets/images/galerie/ilot_librairie.jpg"><img src="../assets/images/galerie/ilot_librairie.jpg" alt="ilot avec livres"></a>
+        <a class="glightbox" href="../assets/images/galerie/interieur_librairie.jpg"><img src="../assets/images/galerie/interieur_librairie.jpg" alt="intérieur d'une librairie"></a>
+        <a class="glightbox" href="../assets/images/galerie/portrait-auteure.jpg"><img src="../assets/images/galerie/portrait-auteure.jpg" alt="portrait auteure"></a>
+        <a class="glightbox" href="../assets/images/galerie/rencontre_auteure.jpg"><img src="../assets/images/galerie/rencontre_auteure.jpg" alt="rencontre auteure"></a>
+        <a class="glightbox" href="../assets/images/galerie/signature.jpg"><img src="../assets/images/galerie/signature.jpg" alt="signature documents"></a>
     </div>
     <footer>
         <div class="reseaux">
@@ -95,7 +96,9 @@
             <a href="planDuSite.html">Plan du site</a>
         </div>
     </footer>
-</body>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 <script src="../assets/JS/bootstrap.bundle.min.js"></script>
+<script src="../assets/JS/custom.js"></script>
+</body>
 </html>

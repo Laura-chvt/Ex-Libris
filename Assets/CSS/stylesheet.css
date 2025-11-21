@@ -8,10 +8,10 @@ Page fantasy :
 /* general */
 
 :root{
-   --bleu-nuit: #000226;
-   --dore : #ffd700;
-   --pastel-dore: #ead998;
-   --pastel-bleu: #2f3a44; 
+    --bleu-nuit: #000226;
+    --dore : #ffd700;
+    --pastel-dore: #ead998;
+    --pastel-bleu: #2f3a44; 
 }
 
 @font-face {
@@ -37,7 +37,9 @@ body {
 
 /* tablette*/
 @media screen and (min-width:577px) and (max-width:899px) {
-    
+    .navUnivers{
+    display: none !important;
+}
 }
 
 /* desktop*/
@@ -50,6 +52,7 @@ body {
 }
 
 /**** INDEX ****/
+
 /* header */
 
 .navMobile{
@@ -76,14 +79,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     background-color: var(--bleu-nuit);
     padding-top: 15px;
     padding-bottom: 15px;
     margin-bottom: 0px;
-}
-.navDesktop .btn-dark{
-    background-color: var(--bleu-nuit);
-    border: none;
 }
 .navDesktop li{
     list-style: none;
@@ -91,13 +91,14 @@ body {
 .navDesktop a{
     text-decoration: none;
     color: white;
-    padding-top: 63px;
     font-size: 2.25rem;
 }
 .navDesktop button{
     font-size: 2.25rem;
+    background-color: var(--bleu-nuit);
+    border: none;
 }
-.navDesktop .navLogo{
+.navDesktop #navLogo{
     font-size: 3rem;
 }
 .navDesktop .dropdown-menu{
@@ -272,11 +273,14 @@ footer a{
     padding-top: 30px;
 }
 
+/*Media query footer*/
 @media screen and (max-width:576px){
     .reseaux img{
         max-width: 80%;
     }
-
+    .reseaux .reseauxFooter{
+        max-width: 50%;
+    }
 }
 
 /*** COMMUN PAGES UNIVERS ***/
@@ -302,7 +306,7 @@ footer a{
     top: 40px;           
     align-self: start;   
     padding: 32px 24px;
-    margin-left: 150px;  
+    margin-left: 300px;  
 }
 .navUnivers a{
     display: block;
@@ -340,7 +344,6 @@ footer a{
     position: relative;
 }
 .coverUnivers{
-    height: 230px;
     width: 160px;
     display: block;
     margin: 0 auto;
@@ -365,22 +368,35 @@ footer a{
     margin-top: auto;
 }
 
+/*Media query univers*/
 
 @media screen and (max-width:576px){
     .rowBook{
-        margin: 0px auto;
+        margin: 0px 0px 0px 5px;
+        width: 100%;
+        justify-content: flex-start;
+        height: auto;
+
     }
 
     .presLivre{
         width: 45%;
+        height: 350px;
+    }
+
+    .listeRomans{
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+    }
+
+    .coverUnivers{
+        width: 80px;
     }
 }
-
 /* tablette*/
 @media screen and (min-width:577px) and (max-width:899px) {
     
 }
-
 /* desktop*/
 @media screen and (min-width:577px) {
     
@@ -412,50 +428,64 @@ footer a{
 
 /*** FICHES DETAILS ***/
 
-.coverFront{
-    width: 35%;
+.fiches h1{
+    font-size: clamp(1.4rem, 6vw, 3.3rem);
+}
+.coverFront, .coverBack{
+    width: 50%;
+}
+.breadcrumb-item{
+    font-size: clamp(0.81rem, 4vw, 2rem);
+}
+.breadcrumb-item a{
+    text-decoration: none;
+    color: var(--bs-body-color);
+}
+.auteurDetail{
+    font-size: clamp(0.81rem, 4vw, 2rem);
 }
 
-.coverBack{
-
+.parutionDetail{
+    font-size: clamp(0.81rem, 4vw, 2rem);
+}
+.resume{
+    text-align: justify;
+    font-size : clamp(0.75rem, 3vw, 1.5rem);
+    font-style: italic;
+}
+@media screen and (max-width:576px){
+    .coverFront, .coverBack{
+        width: 70%;
+    }
 }
 
 /*** GALERIE ***/
 
-.grid {
-    position: relative;
-    margin: 0 auto;
-}
-
-.grid-sizer {
-    width: 33.333%;
-}
-
-.grid-item {
-    width: 33.333%;
-    margin-bottom: 16px;
-    display: block;
-}
-
-.grid-item img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+.galerie img{
+    width:30%;
 }
 
 /*** CONTACT ***/
 
 .contacter{
     background-color: var(--pastel-dore);
+    font-size : clamp(0.90rem, 3vw, 1.5rem);
+}
+
+.trouver p {
+    font-size : clamp(0.90rem, 3vw, 1.5rem);
 }
 
 .contacter #envoyerButton{
     background-color: var(--bleu-nuit);
     color: white;
     border: none;
-    padding: 5px 7px;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.contacter .formulaire input, .contacter .formulaire textarea{
+    border: none;
 }
 
 /*** MENTIONS LEGALES, POLITIQUE CONFIDENTIALITE, PLAN DU SITE ***/
