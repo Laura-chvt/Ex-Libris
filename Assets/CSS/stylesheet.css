@@ -504,13 +504,17 @@ footer a{
 .galerie{
     background-color: var(--pastel-bleu);
 }
+.galerie h1{
+    
+}
 
 .displayGlightbox{
     margin: 15px;
 }
 
 .displayGlightbox img{
-    height: auto;
+    height: 400px;
+    object-fit: cover;
     width:100%;
     border-radius: 10px;
 }
