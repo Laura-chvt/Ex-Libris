@@ -55,9 +55,9 @@
             <!--Carousel évenement avec bootstrap-->
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button id="carouselIndicators1" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button id="carouselIndicators2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button id="carouselIndicators3" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -70,11 +70,11 @@
                         <img src="assets/images/banner-evenement3.jpg" class="d-block w-100" alt="banniere pour un evenement conference">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <button id="controlPrev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <button id="controlNext" class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -85,15 +85,15 @@
         </section>
         <!--Section sorties-->
         <section class="sorties">
-            <h2>Sorties du mois</h2>
-            <div class="containerSorties">
-                <div class="bookSorties">
+            <h2 class="mb-5">Sorties du mois</h2>
+            <div class="containerSorties d-flex justify-content-center gap-3 gap-md-5">
+                <div class="bookSorties ms-3">
                     <img class="bookCover" src="assets/images/cover-82-secondes.jpg" alt="couverture livre 8.2 secondes" >
                     <p class="titre">8.2 secondes</p>
                     <p class="auteur">Maxime Chattam</p>
                     <p class="resumeSorties">8,2 secondes.<br>C'est le temps qu'il faut pour tomber amoureux. <br>C'est aussi le temps qu'il faut pour mourir.</p>
                 </div>
-                <div class="bookSorties">
+                <div class="bookSorties me-3">
                     <img class="bookCover" src="assets/images/cover-cold-case-academy.jpg" alt="couverture livre Cold Case Academy">
                     <p class="titre">Cold Case Academy</p>
                     <p class="auteur">Jennifer Lynn Barnes</p>
@@ -102,8 +102,8 @@
             </div>
         </section>
         <!--Section auteur du mois-->
-        <section class="auteurMois">
-            <h2>Auteur du mois</h2>
+        <section class="auteurMois d-flex flex-wrap justify-content-center">
+            <h2 class="w-100 mb-3">Auteur du mois</h2>
             <div class="containerAuteur">
                 <img class="portrait" src="assets/images/portraitSarahJMaas.webp" alt="portrait de Sarah J Maas">
                 <div class="texteAuteur">
@@ -161,37 +161,37 @@
         </section>
         <!--Section footer-->
         <footer>
-        <div class="reseaux">
-            <div class="logoFooter">
-                <img src="assets/images/logoBlancNomSVG.svg" alt="logo Ex Libris" height="279" width="244">
+            <div class="reseaux">
+                <div>
+                    <img id="logoFooter" src="assets/images/logoBlancNomSVG.svg" alt="logo Ex Libris" height="279" width="244">
+                </div>
+                <div class="reseauxFooter">
+                    <img src="assets/images/Icon/icons8-facebook-BLANC.png" alt="icone logo facebook" height="65" width="65">
+                    <img src="assets/images/Icon/icons8-instagram-BLANC.png" alt="icone logo Instagram" height="65" width="65">
+                    <img src="assets/images/Icon/icons8-tiktok-BLANC.png" alt="icone logo Tiktok" height="65" width="65">
+                </div>
+            </div> 
+            <div class="contactFooter">
+                <p>Librairie Ex Libris <br>4 rue du Rhin<br>68000 Colmar</p>
+                <p>Tel : 03.68.67.20.22.<br>Mail : exlibris@gmail.com</p>
+                <p>Horaires :<br>Lundi au samedi :<br>10h - 18h</p>
             </div>
-            <div class="reseauxFooter">
-                <img src="assets/images/Icon/icons8-facebook-BLANC.png" alt="icone logo facebook" height="65" width="65">
-                <img src="assets/images/Icon/icons8-instagram-BLANC.png" alt="icone logo Instagram" height="65" width="65">
-                <img src="assets/images/Icon/icons8-tiktok-BLANC.png" alt="icone logo Tiktok" height="65" width="65">
+            <div class="planFooterGauche">
+                <a href="index.html">Accueil</a>
+                <p>Univers</p>
+                <a href="pages/fantasy.html">Fantasy</a>
+                <a href="pages/policier.html">Policier</a>
+                <a href="pages/romance.html">Romance</a>
+                <a href="pages/jeunesse.html">Jeunesse</a>
             </div>
-        </div> 
-        <div class="contactFooter">
-            <p>Librairie Ex Libris <br>4 rue du Rhin<br>68000 Colmar</p>
-            <p>Tel : 03.68.67.20.22.<br>Mail : exlibris@gmail.com</p>
-            <p>Horaires :<br>Lundi au samedi :<br>10h - 18h</p>
-        </div>
-        <div class="planFooterGauche">
-            <a href="index.html">Accueil</a>
-            <p>Univers</p>
-            <a href="pages/fantasy.html">Fantasy</a>
-            <a href="pages/policier.html">Policier</a>
-            <a href="pages/romance.html">Romance</a>
-            <a href="pages/jeunesse.html">Jeunesse</a>
-        </div>
-        <div class="planFooterDroite">
-            <a href="pages/contact.html">Contacts</a>
-            <a href="pages/galerie.html">Galerie</a>
-            <a href="pages/mentions.html">Mentions légales</a>
-            <a href="pages/confidentialite.html">Politique de confientialité</a>
-            <a href="pages/planDuSite.html">Plan du site</a>
-        </div>
+            <div class="planFooterDroite">
+                <a href="pages/contact.html">Contacts</a>
+                <a href="pages/galerie.html">Galerie</a>
+                <a href="pages/mentions.html">Mentions légales</a>
+                <a href="pages/confidentialite.html">Politique de confientialité</a>
+                <a href="pages/planDuSite.html">Plan du site</a>
+            </div>
         </footer>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script> <!--JS de Bootstrap-->
     </body>
 </html>
