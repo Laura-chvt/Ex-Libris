@@ -176,8 +176,7 @@ h2{
     width: 95%;
 }
 .portrait{
-    width: 100%; 
-    margin: 5px 10px;
+    margin: 0px 10px;
 }
 .texteAuteur {
     padding: 30px 5px;
@@ -231,12 +230,12 @@ h2{
 
 /*MEDIA QUERIES */
 
-@media screen and (min-width:577px) {
+@media screen and (min-width:899px) {
 
     .h1index{
         margin: 50px auto 60px auto;
     }
-   .imgContainer {
+    .imgContainer {
         height: 520px;
     }
     .bookSorties{
@@ -386,9 +385,8 @@ footer a{
     background-color: var(--pastel-dore);
     padding: 40px 30px;
     width: 30%;
-    height: 100%;
+    height: 500px;
     margin-bottom: 30px;
-    max-height: 450px;
     position: relative;
 }
 .coverUnivers{
@@ -399,7 +397,8 @@ footer a{
 .titreUnivers{
     text-align: center;
     font-size: clamp(1rem, 6vw, 2.5rem);
-    margin-bottom: -10px;
+    margin-bottom: -8px;
+    line-height: 3rem;
 }
 .auteurUnivers{
     text-align: center;
@@ -418,20 +417,27 @@ footer a{
 
 /*Media query univers*/
 
-@media screen and (max-width:576px){
+@media screen and (max-width:899px){
     .heroUnivers{
         height: 35vh;
     }
 
     .rowBook{
         margin: 0px 0px 0px 5px;
-        width: 100%;
         justify-content: flex-start;
         height: auto;
     }
     .presLivre{
         width: 45%;
-        height: 350px;
+        height: 300px;
+        padding: 20px 20px;
+        line-height: 2rem;
+    }
+    .titreUnivers{
+        line-height: 2rem;
+    }
+    .auteurUnivers{
+        margin-bottom: 15px;
     }
     .listeRomans{
         grid-template-columns: 1fr;
@@ -441,6 +447,12 @@ footer a{
         width: 80px;
     }
 }
+@media screen and (min-width:577px) and (max-width:899px) {
+    .rowBook{
+        margin: 10px 100px;
+    }
+}
+
 
 /*** FANTASY ***/
 
@@ -454,16 +466,34 @@ footer a{
     background-image: url(../images/bannerPolicier.jpg);
 }
 
+.policier h1{
+    color: var(--pastel-dore);
+}
+
 /*** ROMANCE ***/
 
 .romance .heroUnivers{
     background-image: url(../images/bannerRomance.jpg);
 }
 
+@media screen and (min-width:577px){
+
+    .romance .heroUnivers{
+        background-position: center 65% ;
+    }
+}
+
 /*** JEUNESSE ***/
 
 .jeunesse .heroUnivers{
     background-image: url(../images/bannerJeunesse.jpg);
+}
+
+@media screen and (min-width:577px){
+
+    .jeunesse .heroUnivers{
+        background-position: center 65% ;
+    }
 }
 
 /*** FICHES DETAILS ***/
@@ -505,7 +535,9 @@ footer a{
     background-color: var(--pastel-bleu);
 }
 .galerie h1{
-    
+    color: white;
+    font-size: clamp(1.8rem, 6vw, 3.3rem);
+    padding: 15px;
 }
 
 .displayGlightbox{
@@ -517,6 +549,9 @@ footer a{
     object-fit: cover;
     width:100%;
     border-radius: 10px;
+}
+.displayGlightbox img:hover{
+    opacity: 0.6;
 }
 .ligne1, .ligne2, .ligne3{
     display: flex;
