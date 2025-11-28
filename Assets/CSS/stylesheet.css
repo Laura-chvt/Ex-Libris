@@ -1,7 +1,14 @@
 /* Index
-Page index : 
-media queries : 
-Page fantasy : 
+général : ligne 6
+INDEX : ligne 29
+Media queries index & nav : 238
+Commun pages univers : 332
+Media queries univers : 418
+Fantasy, policier, romance, jeunesse : 468 à 511
+Fiches détail : 514
+Galerie : 547
+Contact : 587
+plan site, mention légales : 610
 
 */
 
@@ -82,7 +89,7 @@ body {
     padding-bottom: 20px;
 }
 .navDesktop .dropdown-item{
-    padding : 15px 40px 15px 40px;
+    padding : 15px 40px;
 }
 
 /* main */
@@ -421,7 +428,7 @@ footer a{
     }
 
     .rowBook{
-        margin: 0px 0px 0px 5px;
+        margin: 0;
         justify-content: flex-start;
         height: auto;
     }
