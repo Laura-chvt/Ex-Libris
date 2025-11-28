@@ -16,7 +16,7 @@ Page fantasy :
 
 @font-face {
     font-family: "Cormorant";
-    src: url("../fonts/CormorantGaramond-VariableFont_wght.woff2") format(woff2);
+    src: url("../fonts/CormorantGaramond-VariableFont_wght.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -26,30 +26,6 @@ body {
     font-family: "Cormorant", 'Times New Roman', Times, serif;
 }
 
-/*MEDIA QUERIES NAVIGATION*/
-
-@media screen and (max-width:576px){
-.navDesktop, .navUnivers{
-        display: none !important;
-    }
-#carouselIndicators1, #carouselIndicators2, #carouselIndicators3, #controlPrev, #controlNext{
-        display: none;
-    }
-}
-
-/* tablette*/
-@media screen and (min-width:577px) and (max-width:899px) {
-    .navUnivers{
-    display: none !important;
-    }
-}
-
-/* desktop*/
-@media screen and (min-width:577px) {
-    .navMobile{
-        display: none !important;
-    }
-}
 
 /**** INDEX ****/
 
@@ -109,7 +85,7 @@ body {
     padding : 15px 40px 15px 40px;
 }
 
-/* body */
+/* main */
 
 .imgContainer {
     width: 100%;
@@ -120,12 +96,11 @@ body {
 }
 .h1index{
     text-align: center;
-    font-size: clamp(2.25rem, 6vw, 4rem);
+    font-size: clamp(2rem, 6vw, 4rem);
     font-weight: 800;
     text-transform: uppercase;
     margin: 30px auto 35px auto;
 }
-
 
 h2{
     text-align: center;
@@ -207,9 +182,8 @@ h2{
     background-color: var(--pastel-dore);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 10px 5px;
-    height: 220px;
+    height: 250px;
 }
 .bookPrix a{
     display: inline-block;
@@ -223,12 +197,54 @@ h2{
 .buttonPrix{
     font-size: clamp(1rem, 4vw, 2rem);
     text-align: center;
-    vertical-align:auto;
     width: 100%;
     height: 20px;
 }
 
-/*MEDIA QUERIES */
+/* footer */
+
+footer{
+    background-color: var(--bleu-nuit);
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: clamp(1rem, 4vw, 1.75rem); 
+    padding-bottom: 25px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.reseauxFooter{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.reseaux, .contactFooter, .planFooterGauche, .planFooterDroite{
+    padding : 20px 20px;
+    width: 50%;
+}
+#logoFooter{
+    width: 100%;
+    height: 170px;
+}
+.reseaux .reseauxFooter img{
+    width: 20%;
+    height: auto;
+    margin: 5px;
+}
+
+/** MEDIA QUERIES INDEX & NAV **/
+
+@media screen and (max-width:576px){
+.navDesktop, .navUnivers{
+        display: none !important;
+    }
+#carouselIndicators1, #carouselIndicators2, #carouselIndicators3, #controlPrev, #controlNext{
+        display: none;
+    }
+}
 
 @media screen and (min-width:899px) {
 
@@ -279,43 +295,24 @@ h2{
         height: 100%;
     }
 }
-
-/* footer */
-
-footer{
-    background-color: var(--bleu-nuit);
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    font-size: clamp(1rem, 4vw, 1.75rem); 
-    padding-bottom: 25px;
-}
-footer a{
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-.reseauxFooter{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-}
-.reseaux, .contactFooter, .planFooterGauche, .planFooterDroite{
-    padding : 20px 20px;
-    width: 50%;
-}
-#logoFooter{
-    width: 100%;
-    height: 170px;
-}
-.reseaux .reseauxFooter img{
-    width: 20%;
-    height: auto;
-    margin: 5px;
+/*Tablette*/
+@media screen and (min-width:577px) and (max-width:899px) {
+    .infoBook{
+        height: 500px;
+    }
+    .buttonPrix{
+        height: 40px;
+    }
+    .navUnivers{
+        display: none !important;
+    }
 }
 
-/*Media query footer*/
+/*media queries navigation et footer*/
 @media screen and (min-width:577px){
+    .navMobile{
+        display: none !important;
+    }
     .contactFooter, .planFooterGauche, .planFooterDroite{
         padding : 60px 20px 0px 20px;
         width: 25%;
@@ -329,6 +326,7 @@ footer a{
         padding-top: 0px;
     }
 }
+
 
 /*** COMMUN PAGES UNIVERS ***/
 
@@ -385,7 +383,7 @@ footer a{
     background-color: var(--pastel-dore);
     padding: 40px 30px;
     width: 30%;
-    height: 500px;
+    height: 540px;
     margin-bottom: 30px;
     position: relative;
 }
@@ -447,9 +445,16 @@ footer a{
         width: 80px;
     }
 }
+
 @media screen and (min-width:577px) and (max-width:899px) {
     .rowBook{
         margin: 10px 100px;
+    }
+    .presLivre{
+        height: 400px;
+    }
+    .titreUnivers{
+        margin : 15px 0px;
     }
 }
 
@@ -488,6 +493,9 @@ footer a{
 .jeunesse .heroUnivers{
     background-image: url(../images/bannerJeunesse.jpg);
 }
+.jeunesse .titreUnivers{
+        padding-top: 25px;
+    }
 
 @media screen and (min-width:577px){
 
@@ -499,7 +507,7 @@ footer a{
 /*** FICHES DETAILS ***/
 
 .fiches h1{
-    font-size: clamp(1.4rem, 6vw, 3.3rem);
+    font-size: clamp(1.8rem, 4vw, 3.3rem);
 }
 .coverFront, .coverBack{
     width: 50%;
@@ -562,13 +570,14 @@ footer a{
     padding: 1rem 0;
 }
 
+/*Media queries galerie*/
 @media screen and (min-width:577px){
     .ligne1, .ligne2, .ligne3{
         flex-wrap: nowrap;
     }
 }
 
-/*** CONTACT ***/
+/**** CONTACT ****/
 
 .contacter{
     background-color: var(--pastel-dore);
